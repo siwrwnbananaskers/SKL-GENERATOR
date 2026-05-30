@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Generator SKL Otomatis | WiraWebSolusi Jasa Pembuatan Website Lubuklinggau</title>
+<meta name="description" content="Aplikasi Generator Surat Keterangan Lulus (SKL) otomatis gratis dari WiraWebSolusi. Jasa pembuatan website, landing page, dan sistem informasi sekolah profesional di Lubuklinggau, Megang Sakti, Musi Rawas, Sumatera Selatan.">
+<meta name="keywords" content="WiraWebSolusi,Jasa Pembuatan Website Lubuklinggau,Web Developer Musi Rawas,Jasa Website Megang Sakti,Programmer Sumatera Selatan,Generator SKL,Aplikasi Kelulusan,Surat Keterangan Lulus,Freelancer Web Lubuklinggau,Remote Programmer Indonesia,Portfolio Wirawan,si_wrwn,Jasa Website Sekolah">
+<meta name="author" content="WiraWebSolusi">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#6366f1">
+<link rel="canonical" href="https://about-wrwn.site/">
+<link rel="icon" type="image/png" sizes="32x32" href="https://about-wrwn.site/assets/image/konten.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://about-wrwn.site/assets/image/konten.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://about-wrwn.site/assets/image/konten.png">
+<link rel="shortcut icon" href="https://about-wrwn.site/assets/image/konten.png">
+<meta property="og:image" content="https://about-wrwn.site/assets/image/konten.png">
+<meta property="og:image:alt" content="Generator SKL Otomatis oleh WiraWebSolusi">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Generator SKL Otomatis | WiraWebSolusi">
+<meta property="og:description" content="Generate massal Surat Keterangan Lulus secara instan, rapi, dan otomatis. 100% aman, luring, dan gratis oleh WiraWebSolusi Lubuklinggau.">
+<meta property="og:url" content="https://about-wrwn.site/">
+<meta property="og:site_name" content="WiraWebSolusi - Jasa Pembuatan Website Lokal Berkualitas">
+<meta property="og:locale" content="id_ID">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Wirawan","url":"https://about-wrwn.site/","description":"Professional Web Developer, Remote Worker, dan Freelancer berlokasi di Megang Sakti, Musi Rawas, melayani klien di Lubuklinggau, Sumatera Selatan, dan seluruh Indonesia.","jobTitle":"Web Developer & Freelancer","nationality":"Indonesian","address":{"@type":"PostalAddress","addressLocality":"Megang Sakti, Musi Rawas, Lubuklinggau","addressRegion":"Sumatera Selatan","addressCountry":"ID"},"sameAs":["https://www.instagram.com/si_wrwn/","https://x.com/si_wrwn","https://www.tiktok.com/@bananaskers","https://www.facebook.com/share/1ZtbjZKYCe/"],"knowsAbout":["Web Development","Jasa Website","Freelancing","Teknologi Informasi"]}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#6366f1',accent:'#818cf8',surface:'#1e1b4b',dark:'#0f0b2e'}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+<style>*{font-family:'Inter',sans-serif}body{background:#0f0b2e;min-height:100vh}.glass{background:rgba(30,27,75,.7);backdrop-filter:blur(16px);border:1px solid rgba(99,102,241,.15)}.glow{box-shadow:0 0 30px rgba(99,102,241,.15)}.card-hover:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(99,102,241,.25)}.dropzone{border:2px dashed rgba(99,102,241,.4);transition:all .3s}.dropzone:hover{border-color:#818cf8;background:rgba(99,102,241,.08)}.btn-primary{background:linear-gradient(135deg,#6366f1,#818cf8);transition:all .3s}.btn-primary:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(99,102,241,.4)}.btn-danger{background:linear-gradient(135deg,#ef4444,#f87171);transition:all .3s}.btn-danger:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(239,68,68,.4)}.table-container::-webkit-scrollbar{height:6px}.table-container::-webkit-scrollbar-thumb{background:#6366f1;border-radius:3px}.custom-scrollbar::-webkit-scrollbar{width:6px;height:6px}.custom-scrollbar::-webkit-scrollbar-thumb{background:#6366f1;border-radius:3px}.custom-scrollbar::-webkit-scrollbar-track{background:rgba(99,102,241,0.05);border-radius:3px}[x-cloak]{display:none !important}.fade-in{animation:fadeIn .5s ease-out}@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse-glow{0%,100%{box-shadow:0 0 5px rgba(99,102,241,.3)}50%{box-shadow:0 0 20px rgba(99,102,241,.6)}}.status-dot{animation:pulse-glow 2s infinite}</style>
+</head>
+<body class="text-gray-200" x-data="sklApp()" x-init="init()">
+
+<!-- HEADER -->
+<header class="glass sticky top-0 z-50 border-b border-indigo-500/20">
+<div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+<div class="flex items-center gap-4">
+    <img src="https://about-wrwn.site/assets/image/konten.png" alt="WiraWebSolusi Logo" class="w-14 h-14 rounded-xl object-cover border-2 border-indigo-500/40 glow shadow-2xl transition-all duration-300 hover:scale-105">
+    <div><h1 class="text-xl md:text-2xl font-black bg-gradient-to-r from-white to-indigo-300 bg-clip-text text-transparent tracking-tighter">SKL Generator</h1><p class="text-xs text-indigo-300/80 font-medium">Surat Keterangan Lulus Otomatis</p></div>
+</div>
+<div class="flex items-center gap-2">
+<span class="hidden sm:inline text-xs text-indigo-300/60">100% Client-Side</span>
+<div class="w-2 h-2 rounded-full bg-emerald-400 status-dot"></div>
+</div>
+</div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-7xl mx-auto px-4 py-3 space-y-4">
+
+<!-- INTERACTIVE USER GUIDE -->
+<div class="glass rounded-2xl glow fade-in mb-6 border border-indigo-500/20">
+  <!-- Guide Header (Static) -->
+  <div class="w-full px-6 py-4 flex items-center justify-between text-left">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-500/25">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+      </div>
+      <div>
+        <h2 class="font-bold text-white text-sm sm:text-base">Panduan Penggunaan Cepat &amp; Tips Anti-Eror</h2>
+        <p class="text-xs text-indigo-200/50 mt-0.5">Petunjuk lengkap pembuatan SKL massal bebas kesalahan format dokumen</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Always Open Body -->
+  <div class="px-6 pb-6 border-t border-indigo-500/10 pt-4">
+    <div class="grid md:grid-cols-4 gap-4 text-xs">
+      
+      <!-- Step 1 -->
+      <div class="bg-indigo-950/40 p-4 rounded-xl border border-indigo-500/10 flex flex-col justify-between">
+        <div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">01</span>
+          <h3 class="font-bold text-white mt-1 mb-1.5 text-sm">Unduh Starter Pack</h3>
+          <p class="text-indigo-200/70 leading-relaxed">Gunakan tombol <b>"Starter Pack"</b> di atas untuk mendapatkan berkas template Excel &amp; Word resmi. Menggunakan template bawaan ini dijamin langsung jalan tanpa pengaturan manual!</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-indigo-950/40 p-4 rounded-xl border border-indigo-500/10 flex flex-col justify-between">
+        <div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">02</span>
+          <h3 class="font-bold text-white mt-1 mb-1.5 text-sm">Isi &amp; Upload Data</h3>
+          <p class="text-indigo-200/70 leading-relaxed">Masukkan data siswa ke Excel. Kolom <b>tanggal lahir</b> diisi bebas (angka Excel otomatis diformat jadi tanggal Indonesia rapi). Upload Excel, lalu pilih file-file foto siswa secara massal.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-indigo-950/40 p-4 rounded-xl border border-indigo-500/10 flex flex-col justify-between">
+        <div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">03</span>
+          <h3 class="font-bold text-white mt-1 mb-1.5 text-sm">Pilih Area Pas Foto</h3>
+          <p class="text-indigo-200/70 leading-relaxed">Begitu Word di-upload, klik gambar contoh pas foto baru yang muncul di bawah tombol upload. <b>Auto Aspect-Ratio Resizer</b> otomatis menyesuaikan pas foto agar <b>tidak peyang/gepeng</b>!</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="bg-indigo-950/40 p-4 rounded-xl border border-indigo-500/10 flex flex-col justify-between">
+        <div>
+          <span class="text-2xl font-bold bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent">04</span>
+          <h3 class="font-bold text-white mt-1 mb-1.5 text-sm">No Surat &amp; Cetak</h3>
+          <p class="text-indigo-200/70 leading-relaxed">Gunakan tag <span class="bg-indigo-950 px-1 py-0.5 rounded text-indigo-300 font-mono text-[10px]">{no_urut_padded}</span> di Word Anda. Setel angka awal nomor surat di kolom samping tombol Generate, lalu klik <b>Generate</b>!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ATURAN MUTLAK TEMPLATE WORD BANNER -->
+    <div class="mt-4 p-4 rounded-xl bg-indigo-950/60 border border-red-500/20 text-xs leading-relaxed">
+      <h4 class="text-red-400 font-bold text-sm mb-1.5 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse animate__animated animate__flash animate__infinite"></span>
+        🚨 ATURAN MUTLAK: Jangan Ubah Penulisan Tag/Placeholder Word!
+      </h4>
+      <p class="text-indigo-300/80 mb-2 leading-relaxed">
+        Agar data dari Excel masuk dengan benar ke template Word Anda, Anda <b>wajib menuliskan tag kecil berikut secara persis tanpa mengubah huruf kapital maupun menambahkan kata baru</b> (Klik tag di bawah untuk langsung menyalin):
+      </p>
+      <div class="flex flex-wrap gap-2 text-[10px] font-mono text-indigo-200">
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{nama}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {nama} disalin!',showConfirmButton:false,timer:800})">{nama}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{tempat}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {tempat} disalin!',showConfirmButton:false,timer:800})">{tempat}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{tanggal_lahir}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {tanggal_lahir} disalin!',showConfirmButton:false,timer:800})">{tanggal_lahir}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{nama_ortu}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {nama_ortu} disalin!',showConfirmButton:false,timer:800})">{nama_ortu}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{nis_nisn}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {nis_nisn} disalin!',showConfirmButton:false,timer:800})">{nis_nisn}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{no_peserta}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {no_peserta} disalin!',showConfirmButton:false,timer:800})">{no_peserta}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{tahun_pelajaran}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {tahun_pelajaran} disalin!',showConfirmButton:false,timer:800})">{tahun_pelajaran}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{foto}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {foto} disalin!',showConfirmButton:false,timer:800})">{foto}</span>
+        <span class="bg-indigo-900/60 border border-indigo-500/20 px-2 py-1 rounded select-all font-semibold hover:border-indigo-400 hover:text-white cursor-pointer transition-all" @click="navigator.clipboard.writeText('{no_urut_padded}');Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag {no_urut_padded} disalin!',showConfirmButton:false,timer:800})">{no_urut_padded}</span>
+      </div>
+      <p class="text-[11px] text-red-400/80 mt-2 font-semibold">
+        ⚠️ PERINGATAN: Mengganti tulisan kecil menjadi kapital (seperti <del class="opacity-70">{NAMA}</del> atau <del class="opacity-70">{NIS_NISN}</del>) atau salah ejaan akan membuat sistem generator tidak mengenali data Anda dan cetak dokumen menjadi kosong!
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- STATS ROW -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 fade-in">
+  
+  <!-- Template Card -->
+  <div class="glass rounded-2xl p-5 glow card-hover transition-all flex items-center gap-4">
+    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0 text-indigo-400 shadow-inner">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+    </div>
+    <div class="flex-1 min-w-0">
+      <p class="text-[10px] text-indigo-300/50 font-bold uppercase tracking-wider">Template Word</p>
+      <p class="text-lg font-bold text-white mt-0.5" x-text="templateName ? 'Terunggah' : 'Belum Ada'"></p>
+      <p class="text-xs text-indigo-300/80 truncate mt-0.5" x-text="templateName || 'Silakan upload .docx'"></p>
+    </div>
+  </div>
+
+  <!-- Students Card -->
+  <div class="glass rounded-2xl p-5 glow card-hover transition-all flex items-center gap-4">
+    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0 text-emerald-400 shadow-inner">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+    </div>
+    <div class="flex-1 min-w-0">
+      <p class="text-[10px] text-emerald-300/50 font-bold uppercase tracking-wider">Data Siswa</p>
+      <p class="text-xl font-black text-emerald-400 mt-0.5" x-text="students.length"></p>
+      <p class="text-xs text-indigo-300/80 mt-0.5">Siswa Terdaftar (.xlsx)</p>
+    </div>
+  </div>
+
+  <!-- Photos Card -->
+  <div class="glass rounded-2xl p-5 glow card-hover transition-all flex items-center gap-4">
+    <div class="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center flex-shrink-0 text-violet-400 shadow-inner">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+    </div>
+    <div class="flex-1 min-w-0">
+      <p class="text-[10px] text-violet-300/50 font-bold uppercase tracking-wider">Foto Siswa</p>
+      <p class="text-xl font-black text-violet-400 mt-0.5" x-text="Object.keys(photos).length"></p>
+      <p class="text-xs text-indigo-300/80 mt-0.5">Terpetakan Massal</p>
+    </div>
+  </div>
+
+  <!-- Status Card -->
+  <div class="glass rounded-2xl p-5 glow card-hover transition-all flex items-center gap-4">
+    <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-inner border transition-colors"
+         :class="templateBase64 && students.length ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' : 'bg-amber-500/10 border-amber-500/20 text-amber-400'">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    </div>
+    <div class="flex-1 min-w-0">
+      <p class="text-[10px] font-bold uppercase tracking-wider"
+         :class="templateBase64 && students.length ? 'text-emerald-300/50' : 'text-amber-300/50'">Status Sistem</p>
+      <p class="text-lg font-bold mt-0.5"
+         :class="templateBase64 && students.length ? 'text-emerald-400' : 'text-amber-400'"
+         x-text="templateBase64 && students.length ? 'Siap Cetak' : 'Menunggu'"></p>
+      <p class="text-xs text-indigo-300/80 mt-0.5"
+         x-text="templateBase64 && students.length ? 'Silakan generate' : 'Lengkapi upload'"></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- STARTER PACK SECTION -->
+<div class="glass rounded-2xl p-6 glow fade-in flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-indigo-500/20 flex items-center justify-center flex-shrink-0">
+<svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+</div>
+<div>
+<h2 class="font-bold text-white text-lg">Starter Pack Template</h2>
+<p class="text-xs text-indigo-300/70 mt-0.5">Unduh format Excel &amp; Word resmi agar tidak perlu membuat dari awal. Tinggal isi data siswa lalu upload!</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 w-full md:w-auto">
+<button class="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white px-5 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 transition-all w-full sm:w-auto justify-center animate__animated animate__pulse animate__infinite" @click="downloadSampleExcel()">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+Format Excel (.xlsx)
+</button>
+<button class="bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white px-5 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 transition-all w-full sm:w-auto justify-center animate__animated animate__pulse animate__infinite" @click="downloadSampleWord()">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+Template Word (.docx)
+</button>
+</div>
+</div>
+
+<!-- UPLOAD SECTION -->
+<div class="grid md:grid-cols-3 gap-4 fade-in">
+
+<!-- WORD UPLOAD -->
+<div class="glass rounded-2xl p-6 glow card-hover transition-all">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center flex-shrink-0">
+<svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+</div>
+<div>
+<h2 class="font-semibold text-white text-base">Template Word (.docx)</h2>
+<p class="text-xs text-indigo-300/60 mt-0.5">Upload template berisi tag {nama}, {nis_nisn}, dll</p>
+</div>
+</div>
+<label class="dropzone rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer block text-center gap-2">
+<input type="file" accept=".docx" class="hidden" @change="uploadTemplate($event)">
+<svg class="w-10 h-10 text-indigo-400/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+<span class="text-sm text-indigo-300/80 font-medium">Klik atau seret file .docx ke sini</span>
+<span class="text-xs text-indigo-300/40">Format: .docx</span>
+<template x-if="templateName"><span class="mt-1 text-xs text-emerald-400 font-medium" x-text="'&check; ' + templateName"></span></template>
+</label>
+<template x-if="templateImages.length > 0">
+  <div class="mt-4 border-t border-indigo-500/20 pt-4 space-y-2 fade-in text-left">
+    <p class="text-xs font-semibold text-indigo-300">Pilih Area Gambar yang Akan Diganti dengan Foto Siswa:</p>
+    
+    <!-- Image Selector Grid -->
+    <div class="grid grid-cols-3 gap-2">
+      <template x-for="img in templateImages" :key="img.path">
+        <div class="relative cursor-pointer rounded-lg overflow-hidden border-2 transition-all p-1 flex flex-col items-center justify-center bg-indigo-950/40"
+             :class="selectedTemplateImage === img.path ? 'border-indigo-500 bg-indigo-500/10' : 'border-transparent hover:border-indigo-500/40'"
+             @click="selectedTemplateImage = img.path; saveState()">
+          <img :src="img.base64" class="h-10 object-contain rounded">
+          <span class="text-[9px] text-indigo-300/60 truncate w-full text-center mt-1" x-text="img.path.split('/').pop()"></span>
+        </div>
+      </template>
+    </div>
+
+    <!-- Notice if only 1 image detected (usually logo kop) -->
+    <template x-if="templateImages.length === 1">
+      <div class="mt-3 p-3 rounded-lg bg-amber-500/10 border border-amber-500/20 text-[11px] text-amber-200 leading-relaxed">
+        <span class="font-bold text-amber-300">&excl; HANYA DETEKSI KOP LOGO</span><br>
+        Di template Anda saat ini, area Pas Foto masih menggunakan kotak tulisan (Text Box/Shape) bertuliskan <span class="bg-indigo-950 px-1 rounded text-indigo-300 font-mono">{foto}</span>.
+        <div class="mt-1.5 list-decimal pl-3 space-y-1">
+          <p>1. Buka template Word Anda.</p>
+          <p>2. Hapus kotak tulisan tersebut.</p>
+          <p>3. <b>Masukkan Gambar asli apa saja</b> (sebagai contoh foto) dan rapikan letaknya.</p>
+          <p>4. Simpan, lalu upload ulang template Anda.</p>
+        </div>
+      </div>
+    </template>
+  </div>
+</template>
+</div>
+
+<!-- EXCEL UPLOAD -->
+<div class="glass rounded-2xl p-6 glow card-hover transition-all">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
+<svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+</div>
+<div>
+<h2 class="font-semibold text-white text-base">Data Siswa (.xlsx)</h2>
+<p class="text-xs text-indigo-300/60 mt-0.5">Header: nama, tempat, tanggal_lahir, nama_ortu, nis_nisn, no_peserta, tahun_pelajaran</p>
+</div>
+</div>
+<label class="dropzone rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer block text-center gap-2">
+<input type="file" accept=".xlsx,.xls" class="hidden" @change="uploadExcel($event)">
+<svg class="w-10 h-10 text-emerald-400/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+<span class="text-sm text-indigo-300/80 font-medium">Klik atau seret file .xlsx ke sini</span>
+<span class="text-xs text-indigo-300/40">Format: .xlsx, .xls</span>
+<template x-if="students.length > 0"><span class="mt-1 text-xs text-emerald-400 font-medium" x-text="'&check; ' + students.length + ' siswa dimuat'"></span></template>
+</label>
+</div>
+
+<!-- FOTO UPLOAD -->
+<div class="glass rounded-2xl p-6 glow card-hover transition-all">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center flex-shrink-0">
+<svg class="w-5 h-5 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+</div>
+<div>
+<h2 class="font-semibold text-white text-base">Foto Siswa (Massal)</h2>
+<p class="text-xs text-indigo-300/60 mt-0.5">Unggah banyak foto sekaligus. Beri nama file = NISN siswa (contoh: 123456.jpg)</p>
+</div>
+</div>
+<label class="dropzone rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer block text-center gap-2">
+<input type="file" accept="image/*" multiple class="hidden" @change="uploadPhotos($event)">
+<svg class="w-10 h-10 text-violet-400/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+<span class="text-sm text-indigo-300/80 font-medium">Klik untuk pilih banyak foto</span>
+<span class="text-xs text-indigo-300/40">Format: .jpg, .png (Nama = NISN)</span>
+<template x-if="Object.keys(photos).length > 0"><span class="mt-1 text-xs text-emerald-400 font-medium" x-text="'&check; ' + Object.keys(photos).length + ' foto dimuat'"></span></template>
+</label>
+</div>
+
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="glass rounded-2xl p-5 glow fade-in flex flex-col md:flex-row md:items-center justify-between gap-4">
+  <!-- Left: Starting Number Input -->
+  <div class="flex items-center justify-between sm:justify-start gap-3 bg-indigo-950/60 border border-indigo-500/20 px-4 py-2.5 rounded-xl text-sm w-full md:w-auto">
+    <span class="text-indigo-300 font-semibold">Mulai Nomor Urut Dari:</span>
+    <input type="number" x-model.number="startNumber" min="1" class="w-16 bg-indigo-900/60 border border-indigo-500/30 rounded-lg px-2 py-1 text-white text-center font-bold outline-none focus:border-indigo-400">
+  </div>
+  
+  <!-- Right: Buttons Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full md:w-auto">
+    <button class="btn-primary px-6 py-3.5 rounded-xl font-semibold text-white flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed w-full" :disabled="!templateBase64 || !students.length" @click="generateZip()">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> Generate ZIP SKL
+    </button>
+    <button class="btn-danger px-6 py-3.5 rounded-xl font-semibold text-white flex items-center justify-center gap-2 w-full" @click="clearData()">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg> Reset Semua
+    </button>
+  </div>
+</div>
+
+<!-- DATA TABLE -->
+<template x-if="students.length > 0">
+<div class="glass rounded-2xl p-6 glow fade-in">
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center flex-shrink-0">
+        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+      </div>
+      <div>
+        <h2 class="font-bold text-white text-base">Preview &amp; Management Data</h2>
+        <p class="text-xs text-indigo-300/60 mt-0.5" x-text="students.length + ' record terdeteksi'"></p>
+      </div>
+    </div>
+    
+    <!-- Search & Sort Controls -->
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+      <!-- Search Input -->
+      <div class="relative w-full sm:w-64">
+        <input type="text" x-model="searchQuery" placeholder="Cari siswa, NISN, atau no peserta..." 
+               class="w-full bg-indigo-950/60 border border-indigo-500/30 rounded-xl pl-9 pr-4 py-2 text-sm text-white placeholder-indigo-300/40 outline-none focus:border-indigo-400 transition-colors">
+        <svg class="absolute left-3 top-2.5 w-4 h-4 text-indigo-300/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      </div>
+      
+      <!-- Sort Container -->
+      <div class="flex items-center gap-2 w-full sm:w-auto">
+        <!-- Sort By Selection -->
+        <div class="flex items-center gap-1.5 bg-indigo-950/60 border border-indigo-500/30 rounded-xl px-3 py-2 text-sm flex-1 sm:flex-initial justify-between sm:justify-start">
+          <span class="text-xs text-indigo-300/60 font-medium">Urut:</span>
+          <select x-model="sortBy" class="bg-transparent text-indigo-200 outline-none cursor-pointer text-xs font-semibold">
+            <option value="nama" class="bg-indigo-950 text-indigo-200">Nama</option>
+            <option value="nis_nisn" class="bg-indigo-950 text-indigo-200">NIS/NISN</option>
+            <option value="no_peserta" class="bg-indigo-950 text-indigo-200">No Peserta</option>
+            <option value="tempat" class="bg-indigo-950 text-indigo-200">Tempat</option>
+          </select>
+        </div>
+        
+        <!-- Sort Order Toggle -->
+        <button @click="sortOrder = (sortOrder === 'asc' ? 'desc' : 'asc')" 
+                class="w-9 h-9 rounded-xl bg-indigo-950/60 border border-indigo-500/30 flex items-center justify-center text-indigo-300 hover:text-white hover:border-indigo-400 transition-all flex-shrink-0"
+                title="Ubah Arah Urutan">
+          <template x-if="sortOrder === 'asc'">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"/></svg>
+          </template>
+          <template x-if="sortOrder === 'desc'">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"/></svg>
+          </template>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table Container with Vertical Scroll -->
+  <div class="table-container overflow-x-auto overflow-y-auto rounded-xl max-h-[420px] custom-scrollbar border border-indigo-500/10">
+    <table class="w-full text-sm">
+      <thead class="sticky top-0 bg-indigo-950 z-10 border-b border-indigo-500/20">
+        <tr class="text-indigo-200">
+          <th class="px-4 py-3 text-left">No</th>
+          <th class="px-4 py-3 text-left">Nama</th>
+          <th class="px-4 py-3 text-left">Tempat</th>
+          <th class="px-4 py-3 text-left">Tgl Lahir</th>
+          <th class="px-4 py-3 text-left">Ortu</th>
+          <th class="px-4 py-3 text-left">NIS/NISN</th>
+          <th class="px-4 py-3 text-left">Foto Match</th>
+          <th class="px-4 py-3 text-left">No Peserta</th>
+          <th class="px-4 py-3 text-left">Thn Ajaran</th>
+        </tr>
+      </thead>
+      <tbody>
+        <template x-for="(s, i) in filteredStudents()" :key="s.nis_nisn || i">
+          <tr class="border-b border-indigo-500/10 hover:bg-indigo-500/10 transition-colors">
+            <td class="px-4 py-3 text-indigo-300" x-text="i+1"></td>
+            <td class="px-4 py-3 font-semibold text-white" x-text="s.nama"></td>
+            <td class="px-4 py-3 text-indigo-200" x-text="s.tempat"></td>
+            <td class="px-4 py-3 text-indigo-200" x-text="s.tanggal_lahir"></td>
+            <td class="px-4 py-3 text-indigo-300" x-text="s.nama_ortu"></td>
+            <td class="px-4 py-3 font-mono text-indigo-200" x-text="s.nis_nisn"></td>
+            <td class="px-4 py-3">
+              <template x-if="photos[s.nis_nisn]">
+                <span class="text-emerald-400 text-xs bg-emerald-500/20 px-2.5 py-1 rounded-full font-bold flex items-center gap-1 w-max border border-emerald-500/30">📸 MATCHED</span>
+              </template>
+              <template x-if="!photos[s.nis_nisn]">
+                <span class="text-amber-400 text-xs bg-amber-500/10 px-2.5 py-1 rounded-full flex items-center gap-1 w-max border border-amber-500/20">&#9675; Belum Ada</span>
+              </template>
+            </td>
+            <td class="px-4 py-3 font-mono text-indigo-300" x-text="s.no_peserta"></td>
+            <td class="px-4 py-3 text-indigo-300" x-text="s.tahun_pelajaran"></td>
+          </tr>
+        </template>
+        <!-- Fallback empty query -->
+        <template x-if="filteredStudents().length === 0">
+          <tr>
+            <td colspan="9" class="px-4 py-8 text-center text-indigo-300/40 text-sm">
+              Tidak ada data siswa yang cocok dengan pencarian Anda.
+            </td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+  </div>
+</div>
+</template>
+
+<!-- SYSTEM ARCHITECTURE & USER MANUAL OVERHAUL -->
+<div class="glass rounded-2xl p-6 glow fade-in border border-indigo-500/25">
+  <div class="flex items-center gap-3 mb-6">
+    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-500/20">
+      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+    </div>
+    <div>
+      <h2 class="font-bold text-white text-base">Panduan Arsitektur Aplikasi &amp; Dokumentasi Tag Otomatis</h2>
+      <p class="text-xs text-indigo-300/60 mt-0.5">Memahami cara kerja sistem penandaan dinamis dan alur proses data offline-first</p>
+    </div>
+  </div>
+
+  <!-- Detailed Copywriter Sections -->
+  <div class="grid md:grid-cols-2 gap-6 text-sm leading-relaxed text-indigo-200/90">
+    
+    <!-- Left Column: The Concept of Bracket Tags -->
+    <div class="space-y-4">
+      <div class="p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/10">
+        <h3 class="text-white font-bold text-sm mb-2 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+          Kenapa Menggunakan Tanda Kurung Kurawal `{}` ?
+        </h3>
+        <p class="text-xs text-indigo-300/80 mb-3">
+          Tanda kurung kurawal ganda atau tunggal seperti <span class="text-indigo-300 font-semibold font-mono bg-indigo-950 px-1 py-0.5 rounded">{tag}</span> adalah standar format <i>placeholder</i> dalam dokumen XML Word (.docx). Simbol ini bertindak sebagai "jangkar pintar" bagi mesin pemroses data kami. Saat berkas Word dibaca:
+        </p>
+        <ul class="list-disc pl-4 space-y-1.5 text-xs text-indigo-300/70">
+          <li>Sistem memindai seluruh dokumen mencari teks yang dibungkus tanda kurung kurawal `{}`.</li>
+          <li>Teks di dalam kurung kurawal akan dicocokkan secara sensitif dengan nama kolom di lembar kerja Excel Anda.</li>
+          <li>Data asli dari Excel akan langsung diinjeksikan secara real-time ke lokasi jangkaran tersebut tanpa merusak gaya huruf, warna, maupun margin dokumen asli Anda!</li>
+        </ul>
+      </div>
+
+      <!-- CRITICAL WARNING: WHY WE MUST NOT CHANGE THE TEMPLATE SETTINGS/TAGS -->
+      <div class="p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/10 text-xs leading-relaxed text-indigo-200/90">
+        <h3 class="text-red-400 font-bold text-sm mb-1.5 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+          PENTING: Kenapa Tag Bawaan Tidak Boleh Diubah?
+        </h3>
+        <p class="mb-2 text-indigo-300/80">
+          Tag-tag berikut sudah <b>terkunci dan diprogram secara permanen di dalam sistem JavaScript aplikasi</b>:
+        </p>
+        <div class="grid grid-cols-2 gap-1 font-mono text-[10px] text-indigo-300/90 bg-black/30 p-2 rounded-lg mb-2">
+          <div>• {nama}</div>
+          <div>• {tempat}</div>
+          <div>• {tanggal_lahir}</div>
+          <div>• {nama_ortu}</div>
+          <div>• {nis_nisn}</div>
+          <div>• {no_peserta}</div>
+          <div>• {tahun_pelajaran}</div>
+          <div>• {foto} (area gambar)</div>
+          <div class="col-span-2">• {no_urut_padded} (no. surat)</div>
+        </div>
+        <p class="text-[11px] text-indigo-300/70 leading-normal">
+          <b>Mengapa dilarang merubah tulisan ini?</b> Karena mesin injeksi kami mencari kecocokan karakter secara persis (<i>case-sensitive</i> &amp; <i>character-precise</i>). Jika Anda mengubah huruf kecil menjadi kapital (misal: <del class="opacity-60">{NAMA}</del>), mengganti ejaan kata (misal: <del class="opacity-60">{nama_siswa}</del>), atau menambahkan spasi, maka <b>mesin generator dipastikan gagal mengenali tag tersebut</b>. Akibatnya, data siswa dari Excel **TIDAK AKAN PERNAH MASUK** (tetap kosong pada hasil cetak). Pastikan gunakan template resmi persis apa adanya!
+        </p>
+      </div>
+
+      <div class="p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/10">
+        <h3 class="text-white font-bold text-sm mb-2 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Daftar Tag Dinamis yang Didukung (Klik untuk Menyalin)
+        </h3>
+        <p class="text-[11px] text-indigo-300/50 mb-3">Sesuaikan tag di dalam file Word Anda persis seperti di bawah ini:</p>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <template x-for="tag in ['{nama}', '{tempat}', '{tanggal_lahir}', '{nama_ortu}', '{nis_nisn}', '{no_peserta}', '{tahun_pelajaran}']">
+            <span class="bg-indigo-950/80 border border-indigo-500/10 hover:border-indigo-400 text-indigo-300 px-2 py-1.5 rounded-lg font-mono text-center cursor-pointer transition-colors" 
+                  x-text="tag" 
+                  @click="navigator.clipboard.writeText(tag);Swal.fire({toast:true,position:'top-end',icon:'success',title:'Tag ' + tag + ' disalin!',showConfirmButton:false,timer:1000})"></span>
+          </template>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Component Anatomy & Features -->
+    <div class="space-y-4">
+      <div class="p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/10">
+        <h3 class="text-white font-bold text-sm mb-2 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-violet-400"></span>
+          Anatomi Komponen Utama &amp; Fungsinya
+        </h3>
+        <div class="space-y-3 text-xs text-indigo-300/80">
+          <div>
+            <span class="text-indigo-200 font-bold">1. Modul Import Template (.docx):</span>
+            <p class="text-indigo-300/60 mt-0.5">Membaca dokumen Word secara langsung di browser Anda. Kami mengekstrak metadata gambar dan menyediakan pemetaan visual sehingga Anda bisa memilih kotak mana yang akan diisi foto siswa.</p>
+          </div>
+          <div>
+            <span class="text-indigo-200 font-bold">2. Smart Date Parser (Excel):</span>
+            <p class="text-indigo-300/60 mt-0.5">Secara otomatis mendeteksi serial tanggal Excel (misal: `41732`) maupun teks manual tanggal lahir dan mengubahnya menjadi format tulisan Indonesia yang baku (`DD Bulan YYYY`).</p>
+          </div>
+          <div>
+            <span class="text-indigo-200 font-bold">3. Auto Aspect-Ratio Resizer (Center-Crop):</span>
+            <p class="text-indigo-300/60 mt-0.5">Modul cerdas yang mengukur rasio placeholder foto pada template Anda. Ukuran foto siswa apa pun yang diupload (3x4, 4x6, dsb) akan disesuaikan secara otomatis menggunakan pemotongan terpusat tanpa membuat foto menjadi gepeng/peyang!</p>
+          </div>
+          <div>
+            <span class="text-indigo-200 font-bold">4. Sequential Letter Numbering:</span>
+            <p class="text-indigo-300/60 mt-0.5">Memungkinkan penomoran surat otomatis yang urut secara urutan baris data. Cukup gunakan tag <span class="font-mono text-indigo-300 bg-indigo-950 px-1 rounded">{no_urut_padded}</span> (2 digit: 01, 02) atau <span class="font-mono text-indigo-300 bg-indigo-950 px-1 rounded">{no_urut_padded_3}</span> (3 digit: 001, 002) di Word Anda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="glass border-t border-indigo-500/20 mt-4">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 text-center md:text-left">
+    
+    <!-- Brand Link -->
+    <a href="https://about-wrwn.site/" target="_blank" rel="noopener" class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-2.5 sm:gap-3 hover:opacity-80 transition-opacity">
+      <img src="https://about-wrwn.site/assets/image/konten.png" alt="WiraWebSolusi Logo" class="w-10 h-10 rounded-xl border border-indigo-500/30 shadow-md">
+      <div class="flex flex-col items-center sm:items-start">
+        <p class="text-sm font-bold text-white tracking-wide">WiraWebSolusi</p>
+        <p class="text-[10px] sm:text-xs text-indigo-300/60 font-medium">Jasa Pembuatan Website Profesional</p>
+      </div>
+    </a>
+
+    <!-- Copyright -->
+    <p class="text-[11px] text-indigo-300/40 border-t border-indigo-500/10 md:border-t-0 pt-2.5 md:pt-0 w-full max-w-xs md:max-w-none md:w-auto text-center md:text-right">&copy; 2026 WiraWebSolusi. All rights reserved.</p>
+
+  </div>
+</footer>
+
+
+<!-- CDN SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pizzip@3.1.7/dist/pizzip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docxtemplater@3.49.0/build/docxtemplater.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<script>
+function sklApp() {
+  return {
+    templateBase64: null,
+    templateName: null,
+    students: [],
+    photos: {},
+    templateImages: [],
+    selectedTemplateImage: '',
+    startNumber: 1,
+    searchQuery: '',
+    sortBy: 'nama',
+    sortOrder: 'asc',
+    showGuide: false,
+
+    init() {
+      try {
+        const savedTemplate = localStorage.getItem('skl_template_base64');
+        const savedName = localStorage.getItem('skl_template_name');
+        const savedStudents = localStorage.getItem('skl_students');
+        const savedPhotos = localStorage.getItem('skl_photos');
+        const savedSelectedImage = localStorage.getItem('skl_selected_template_image');
+        const savedStartNumber = localStorage.getItem('skl_start_number');
+        if (savedTemplate) this.templateBase64 = savedTemplate;
+        if (savedName) this.templateName = savedName;
+        if (savedStudents) this.students = JSON.parse(savedStudents);
+        if (savedPhotos) this.photos = JSON.parse(savedPhotos);
+        if (savedSelectedImage) this.selectedTemplateImage = savedSelectedImage;
+        if (savedStartNumber) this.startNumber = parseInt(savedStartNumber, 10) || 1;
+        
+        // Extract images from base64 if it exists on load
+        if (this.templateBase64) {
+          this.extractImagesFromTemplate();
+        }
+      } catch(e) { console.warn('LocalStorage load error', e); }
+    },
+
+    saveState() {
+      try {
+        if (this.templateBase64) localStorage.setItem('skl_template_base64', this.templateBase64);
+        if (this.templateName) localStorage.setItem('skl_template_name', this.templateName);
+        localStorage.setItem('skl_students', JSON.stringify(this.students));
+        localStorage.setItem('skl_photos', JSON.stringify(this.photos));
+        if (this.selectedTemplateImage) localStorage.setItem('skl_selected_template_image', this.selectedTemplateImage);
+        localStorage.setItem('skl_start_number', this.startNumber);
+      } catch(e) { console.warn('LocalStorage save error', e); }
+    },
+
+    cropImageToRatio(base64Str, targetRatio) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => {
+          const canvas = document.createElement('canvas');
+          const ctx = canvas.getContext('2d');
+          
+          const currentRatio = img.width / img.height;
+          let sourceX = 0, sourceY = 0, sourceWidth = img.width, sourceHeight = img.height;
+          
+          if (currentRatio > targetRatio) {
+            // Current image is wider than target. Crop the sides.
+            sourceWidth = img.height * targetRatio;
+            sourceX = (img.width - sourceWidth) / 2;
+          } else if (currentRatio < targetRatio) {
+            // Current image is taller than target. Crop the top/bottom.
+            sourceHeight = img.width / targetRatio;
+            sourceY = (img.height - sourceHeight) / 2;
+          }
+          
+          canvas.width = sourceWidth;
+          canvas.height = sourceHeight;
+          
+          ctx.drawImage(img, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, sourceWidth, sourceHeight);
+          // Return high-quality jpeg base64 without mime prefix
+          resolve(canvas.toDataURL('image/jpeg', 0.95).split(',')[1]);
+        };
+        img.onerror = () => resolve(base64Str);
+        img.src = 'data:image/jpeg;base64,' + base64Str;
+      });
+    },
+
+    filteredStudents() {
+      let list = [...this.students];
+      if (this.searchQuery) {
+        const q = this.searchQuery.toLowerCase().trim();
+        list = list.filter(s => 
+          (s.nama && s.nama.toLowerCase().includes(q)) ||
+          (s.nis_nisn && s.nis_nisn.toLowerCase().includes(q)) ||
+          (s.tempat && s.tempat.toLowerCase().includes(q)) ||
+          (s.no_peserta && s.no_peserta.toLowerCase().includes(q))
+        );
+      }
+      if (this.sortBy) {
+        list.sort((a, b) => {
+          const valA = (a[this.sortBy] || '').toString().toLowerCase();
+          const valB = (b[this.sortBy] || '').toString().toLowerCase();
+          let cmp = valA.localeCompare(valB, undefined, {numeric: true});
+          return this.sortOrder === 'asc' ? cmp : -cmp;
+        });
+      }
+      return list;
+    },
+
+    async extractImagesFromTemplate() {
+      try {
+        const zip = await JSZip.loadAsync(this.templateBase64, {base64: true});
+        const images = [];
+        for (const filename of Object.keys(zip.files)) {
+          if (filename.startsWith("word/media/") && /\.(png|jpg|jpeg|gif|bmp)$/i.test(filename)) {
+            const fileData = await zip.files[filename].async("base64");
+            const ext = filename.split('.').pop().toLowerCase();
+            const mime = ext === 'png' ? 'image/png' : 'image/jpeg';
+            const dataUrl = `data:${mime};base64,${fileData}`;
+            
+            // Measure image dimensions and ratio
+            let ratio = 3 / 4; // default
+            try {
+              ratio = await new Promise((res) => {
+                const img = new Image();
+                img.onload = () => res(img.width / img.height);
+                img.onerror = () => res(3 / 4);
+                img.src = dataUrl;
+              });
+            } catch(e){}
+
+            images.push({
+              path: filename,
+              base64: dataUrl,
+              ratio: ratio
+            });
+          }
+        }
+        this.templateImages = images;
+        if (!this.selectedTemplateImage) {
+          if (images.length > 1) {
+            this.selectedTemplateImage = images[1].path;
+          } else {
+            this.selectedTemplateImage = '';
+          }
+        }
+      } catch (err) {
+        console.error("Gagal extract gambar template:", err);
+      }
+    },
+
+    uploadPhotos(event) {
+      const files = event.target.files;
+      if (!files || files.length === 0) return;
+      let count = 0;
+      const total = files.length;
+      Swal.fire({
+        title: 'Memproses Foto...',
+        html: 'Membaca <b>0</b> dari ' + total + ' file...',
+        allowOutsideClick: false,
+        didOpen: () => { Swal.showLoading(); },
+        background: '#1e1b4b',
+        color: '#e2e8f0'
+      });
+
+      const promises = Array.from(files).map(file => {
+        return new Promise((resolve) => {
+          if (!file.type.startsWith('image/')) {
+            resolve();
+            return;
+          }
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            const base64 = e.target.result.split(',')[1];
+            const nameParts = file.name.split('.');
+            const ext = nameParts.pop().toLowerCase();
+            const nisn = nameParts.join('.').trim();
+            this.photos[nisn] = { base64, ext };
+            count++;
+            Swal.update({
+              html: 'Membaca <b>' + count + '</b> dari ' + total + ' file...'
+            });
+            resolve();
+          };
+          reader.onerror = () => resolve();
+          reader.readAsDataURL(file);
+        });
+      });
+
+      Promise.all(promises).then(() => {
+        this.saveState();
+        Swal.fire({
+          icon: 'success',
+          title: 'Foto Dimuat!',
+          text: count + ' foto siswa berhasil diimpor dan dipetakan berdasarkan NISN.',
+          background: '#1e1b4b',
+          color: '#e2e8f0',
+          confirmButtonColor: '#6366f1'
+        });
+      });
+    },
+
+    downloadSampleExcel() {
+      try {
+        const data = [
+          {
+            nama: "Ahmad Fauzi",
+            tempat: "Kabupaten Fiktif",
+            tanggal_lahir: "12 Januari 2014",
+            nama_ortu: "Budi Santoso",
+            nis_nisn: "0012345678",
+            no_peserta: "3-12-001-009-8",
+            tahun_pelajaran: "2025/2026"
+          },
+          {
+            nama: "Siti Aminah",
+            tempat: "Kabupaten Fiktif",
+            tanggal_lahir: "24 Agustus 2014",
+            nama_ortu: "Hasan Basri",
+            nis_nisn: "0012345679",
+            no_peserta: "3-12-001-010-7",
+            tahun_pelajaran: "2025/2026"
+          }
+        ];
+        const worksheet = XLSX.utils.json_to_sheet(data);
+        
+        // Auto-fit column widths to ensure a beautifully spaced, clean Excel file
+        worksheet['!cols'] = [
+          { wch: 25 }, // nama
+          { wch: 20 }, // tempat
+          { wch: 22 }, // tanggal_lahir
+          { wch: 25 }, // nama_ortu
+          { wch: 18 }, // nis_nisn
+          { wch: 22 }, // no_peserta
+          { wch: 18 }  // tahun_pelajaran
+        ];
+        
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Data Siswa");
+        const wbout = XLSX.write(workbook, {bookType:'xlsx', type:'array'});
+        const blob = new Blob([wbout], {type:"application/octet-stream"});
+        saveAs(blob, "Format_Data_Siswa.xlsx");
+        Swal.fire({
+          icon: 'success',
+          title: 'Format Excel Diunduh!',
+          text: 'Kolom Excel telah disesuaikan agar rapi dan memiliki spasi yang pas.',
+          background: '#1e1b4b',
+          color: '#e2e8f0',
+          confirmButtonColor: '#6366f1'
+        });
+      } catch(e) {
+        Swal.fire({icon:'error',title:'Gagal Mengunduh',text:e.message,background:'#1e1b4b',color:'#e2e8f0'});
+      }
+    },
+
+    downloadSampleWord() {
+      try {
+        const zip = new JSZip();
+        
+        // 1. [Content_Types].xml
+        const contentTypes = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+          '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">' +
+          '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>' +
+          '<Default Extension="xml" ContentType="application/xml"/>' +
+          '<Default Extension="png" ContentType="image/png"/>' +
+          '<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>' +
+          '</Types>';
+        zip.file("[Content_Types].xml", contentTypes);
+        
+        // 2. _rels/.rels
+        const rels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+          '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+          '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>' +
+          '</Relationships>';
+        zip.folder("_rels").file(".rels", rels);
+        
+        // 3. word/_rels/document.xml.rels
+        const docRels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+          '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+          '<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image1.png"/>' +
+          '</Relationships>';
+        zip.folder("word").folder("_rels").file("document.xml.rels", docRels);
+        
+        // 4. word/media/image1.png (1x1 grey pixel PNG)
+        zip.folder("word").folder("media").file("image1.png", "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN88eLFfwAINANS9O22VwAAAABJRU5ErkJggg==", {base64: true});
+
+        // 5. word/document.xml helper-based generation
+        // Strictly sets Times New Roman for all elements and optimizes margins to fit exactly 1 page
+        const run = (text, isBold = false, sizeVal = 22, isUnderline = false) => {
+          let rPr = '<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>';
+          if (isBold) rPr += '<w:b/><w:bCs/>';
+          if (isUnderline) rPr += '<w:u w:val="single"/>';
+          if (sizeVal) rPr += `<w:sz w:val="${sizeVal}"/><w:szCs w:val="${sizeVal}"/>`;
+          rPr += '</w:rPr>';
+          const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+          return `<w:r>${rPr}<w:t>${escaped}</w:t></w:r>`;
+        };
+
+        const p = (content, jc = 'left', before = 0, after = 0, hasDoubleBorder = false) => {
+          const jcTag = jc !== 'left' ? `<w:jc w:val="${jc}"/>` : '';
+          const spacingTag = (before > 0 || after > 0) ? `<w:spacing w:before="${before}" w:after="${after}"/>` : '';
+          const borderTag = hasDoubleBorder ? '<w:pBdr><w:bottom w:val="double" w:sz="18" w:space="4" w:color="000000"/></w:pBdr>' : '';
+          const pPr = (jcTag || spacingTag || borderTag) ? `<w:pPr>${jcTag}${spacingTag}${borderTag}</w:pPr>` : '';
+          return `<w:p>${pPr}${content}</w:p>`;
+        };
+
+        const makeCell = (content, width, applyBorders = false) => {
+          let tcPr = `<w:tcPr><w:tcW w:w="${width}" w:type="dxa"/>`;
+          if (applyBorders) {
+            tcPr += '<w:tcBorders>' +
+              '<w:top w:val="single" w:sz="6" w:space="0" w:color="000000"/>' +
+              '<w:left w:val="single" w:sz="6" w:space="0" w:color="000000"/>' +
+              '<w:bottom w:val="single" w:sz="6" w:space="0" w:color="000000"/>' +
+              '<w:right w:val="single" w:sz="6" w:space="0" w:color="000000"/>' +
+              '</w:tcBorders><w:vAlign w:val="center"/>';
+          } else {
+            tcPr += '<w:tcBorders><w:top w:val="none"/><w:left w:val="none"/><w:bottom w:val="none"/><w:right w:val="none"/></w:tcBorders>';
+          }
+          tcPr += '</w:tcPr>';
+          return `<w:tc>${tcPr}${content}</w:tc>`;
+        };
+
+        let body = '';
+
+        // KOP SURAT (Letterhead)
+        body += p(run("PEMERINTAH KABUPATEN DAERAH FIKTIF", true, 24), "center", 0, 0);
+        body += p(run("DINAS PENDIDIKAN", true, 26), "center", 0, 0);
+        body += p(run("SEKOLAH DASAR NEGERI 1 IMPLEMEN FIKTIF", true, 28), "center", 0, 0);
+        body += p(run("TERAKREDITASI \"A\"", true, 20), "center", 0, 0);
+        body += p(run("Alamat : Jl. Raya Belajar Bersama No. 123, Kecamatan Pintar, Kabupaten Fiktif 12345", false, 18), "center", 0, 0);
+        body += p(run("Email: info@sdn1fiktif.sch.id | NPSN: 12345678", false, 16), "center", 0, 100, true);
+
+        // TITLE
+        body += p(run("SURAT KETERANGAN LULUS", true, 28, true), "center", 180, 0);
+        body += p(run("Nomor: 422 / {no_urut_padded} / SKL / SDN-FKT / 2026", true, 20), "center", 0, 150);
+
+        // PARAGRAPH 1 (Intro)
+        body += p(run("Yang bertanda tangan di bawah ini Kepala SD Negeri 1 Implemen Fiktif, Nomor Pokok Sekolah Nasional 12345678, Kabupaten Daerah Fiktif, Provinsi Sumatera Fiktif, dengan ini menerangkan bahwa:", false, 22), "both", 100, 100);
+
+        // STUDENT DATA TABLE (Borderless, Times New Roman, aligned colons)
+        let tableXml = '<w:tbl>' +
+          '<w:tblPr>' +
+            '<w:tblBorders>' +
+              '<w:top w:val="none"/><w:left w:val="none"/><w:bottom w:val="none"/><w:right w:val="none"/>' +
+              '<w:insideH w:val="none"/><w:insideV w:val="none"/>' +
+            '</w:tblBorders>' +
+            '<w:tblCellMar>' +
+              '<w:top w:w="40" w:type="dxa"/><w:bottom w:w="40" w:type="dxa"/>' +
+            '</w:tblCellMar>' +
+          '</w:tblPr>';
+
+        const addRow = (label, value, isValBold = false) => {
+          return '<w:tr>' +
+            makeCell(p(run(label, false, 22), "left", 0, 0), 2800) +
+            makeCell(p(run(":", false, 22), "center", 0, 0), 400) +
+            makeCell(p(run(value, isValBold, 22), "left", 0, 0), 5800) +
+            '</w:tr>';
+        };
+
+        tableXml += addRow("Nama", "{nama}", true);
+        tableXml += addRow("Tempat Tanggal Lahir", "{tempat}, {tanggal_lahir}");
+        tableXml += addRow("Nama Orang Tua/Wali", "{nama_ortu}");
+        tableXml += addRow("NIS/NISN", "{nis_nisn}");
+        tableXml += addRow("Nomor Peserta", "{no_peserta}");
+        tableXml += addRow("Tahun Pelajaran", "{tahun_pelajaran}");
+        tableXml += '</w:tbl>';
+
+        body += tableXml;
+
+        // Paragraph 2
+        body += p(run("Berdasarkan Keputusan Kepala SD Negeri 1 Implemen Fiktif Nomor: 422/01/VI/SDN-FKT/2026, Tanggal 02 Juni 2026, tentang Kelulusan Peserta Didik Kelas VI Tahun Pelajaran {tahun_pelajaran}, dinyatakan:", false, 22), "both", 120, 100);
+
+        // STATUS (LULUS)
+        body += p(run("LULUS", true, 32), "center", 80, 80);
+
+        // Regulation
+        body += p(run("dari satuan Pendidikan sesuai dengan Permendikbudristek Nomor 21 Tahun 2022 tentang Standar Penilaian Pendidikan pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah, Permendikbudristek Nomor 5 Tahun 2022 tentang Standar Kompetensi Lulusan pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah, dan Permendikbudristek Nomor 58 Tahun 2024 tentang Ijazah Jenjang Pendidikan Dasar dan Pendidikan Menengah.", false, 22), "both", 100, 100);
+
+        // Closing
+        body += p(run("Demikian surat keterangan ini dibuat dengan sebenarnya untuk dapat dipergunakan sebagaimana mestinya.", false, 22), "both", 100, 180);
+
+        // 6. Inline drawing XML placeholder with Alt Text 'foto'
+        const drawingXml = 
+          '<w:drawing>' +
+            '<wp:inline distT="0" distB="0" distL="0" distR="0">' +
+              '<wp:extent cx="1080000" cy="1440000"/>' +
+              '<wp:effectExtent l="0" t="0" r="0" b="0"/>' +
+              '<wp:docPr id="2" name="Foto Siswa" descr="foto"/>' +
+              '<wp:cNvGraphicFramePr/>' +
+              '<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">' +
+                '<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">' +
+                  '<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">' +
+                    '<pic:nvPicPr>' +
+                      '<pic:cNvPr id="0" name="placeholder.png"/>' +
+                      '<pic:cNvPicPr/>' +
+                    '</pic:nvPicPr>' +
+                    '<pic:blipFill>' +
+                      '<a:blip xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:embed="rId2"/>' +
+                      '<a:stretch><a:fillRect/></a:stretch>' +
+                    '</pic:blipFill>' +
+                    '<pic:spPr>' +
+                      '<a:xfrm>' +
+                        '<a:off x="0" y="0"/>' +
+                        '<a:ext cx="1080000" cy="1440000"/>' +
+                      '</a:xfrm>' +
+                      '<a:prstGeom prst="rect"/>' +
+                    '</pic:spPr>' +
+                  '</pic:pic>' +
+                '</a:graphicData>' +
+              '</a:graphic>' +
+            '</wp:inline>' +
+          '</w:drawing>';
+
+        // Signature + Foto Grid (Flat 3-Column Table)
+        let footerTable = '<w:tbl>' +
+          '<w:tblPr>' +
+            '<w:tblBorders>' +
+              '<w:top w:val="none"/><w:left w:val="none"/><w:bottom w:val="none"/><w:right w:val="none"/>' +
+              '<w:insideH w:val="none"/><w:insideV w:val="none"/>' +
+            '</w:tblBorders>' +
+          '</w:tblPr>' +
+          '<w:tr>' +
+            '<w:trPr><w:cantSplit/><w:trHeight w:val="2000" w:hRule="exact"/></w:trPr>' +
+            
+            // Col 1: Foto Box Frame (with embedded drawingXml image placeholder!)
+            makeCell(
+              p(`<w:r>${drawingXml}</w:r>`, "center", 0, 0),
+              1701, true
+            ) +
+            
+            // Col 2: Spacer
+            makeCell(
+              p(run("", false, 22), "left", 0, 0),
+              3300
+            ) +
+            
+            // Col 3: Signature Block
+            makeCell(
+              p(run("Belajar, 02 Juni 2026", false, 22), "left", 0, 0) +
+              p(run("Kepala SD Negeri 1 Implemen Fiktif,", false, 22), "left", 0, 0) +
+              p(run("NAMA KEPALA SEKOLAH, GELAR", true, 22, true), "left", 700, 0) +
+              p(run("NIP. 19xxxxxxxxxxxxxx", true, 22), "left", 0, 0),
+              4000
+            ) +
+          '</w:tr>' +
+        '</w:tbl>';
+
+        body += footerTable;
+
+        // Custom compact margins: 0.5 inches top/bottom, 0.7 inches left/right to ensure 1-page fit
+        const sectPr = '<w:sectPr>' +
+          '<w:pgMar w:top="720" w:right="1000" w:bottom="720" w:left="1000" w:header="720" w:footer="720" w:gutter="0"/>' +
+          '</w:sectPr>';
+
+        const docXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` +
+          `<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" ` +
+          `xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" ` +
+          `xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" ` +
+          `xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" ` +
+          `xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">` +
+          `<w:body>${body}${sectPr}</w:body>` +
+          `</w:document>`;
+
+        zip.folder("word").file("document.xml", docXml);
+        
+        zip.generateAsync({type:"blob", mimeType:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"}).then(blob => {
+          saveAs(blob, "Template_SKL_Siswa.docx");
+          Swal.fire({
+            icon: 'success',
+            title: 'Template Word Diunduh!',
+            text: 'Template SKL format resmi fiktif (Times New Roman & Pas 1 Halaman) berhasil diunduh.',
+            background: '#1e1b4b',
+            color: '#e2e8f0',
+            confirmButtonColor: '#6366f1'
+          });
+        });
+      } catch(e) {
+        Swal.fire({icon:'error',title:'Gagal Mengunduh',text:e.message,background:'#1e1b4b',color:'#e2e8f0'});
+      }
+    },
+
+    uploadTemplate(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      if (!file.name.endsWith('.docx')) {
+        Swal.fire({icon:'error',title:'Format Salah',text:'Silakan upload file .docx',background:'#1e1b4b',color:'#e2e8f0'});
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = async (e) => {
+        const base64 = e.target.result.split(',')[1];
+        this.templateBase64 = base64;
+        this.templateName = file.name;
+        await this.extractImagesFromTemplate();
+        this.saveState();
+        Swal.fire({icon:'success',title:'Template Berhasil!',text:'File "'+file.name+'" telah dimuat.',background:'#1e1b4b',color:'#e2e8f0',confirmButtonColor:'#6366f1'});
+      };
+      reader.readAsDataURL(file);
+    },
+
+    formatExcelDate(val) {
+      if (!val) return '';
+      // If it's already a readable text format (contains letters / Indonesian months), return it directly
+      if (typeof val === 'string' && /[a-zA-Z]/.test(val)) {
+        return val;
+      }
+      
+      let dateObj = null;
+      
+      // Case 1: If it's a numeric Excel serial date
+      if (typeof val === 'number' || (!isNaN(val) && !isNaN(parseFloat(val)))) {
+        const num = parseFloat(val);
+        // Excel date serial numbers are usually between 10000 and 60000
+        if (num > 10000 && num < 60000) {
+          // Convert Excel serial number to JS Date (round to avoid floating point inaccuracies)
+          dateObj = new Date(Math.round((num - 25569) * 86400 * 1000));
+        }
+      } 
+      
+      // Case 2: If it's already a Date object
+      if (val instanceof Date) {
+        dateObj = val;
+      }
+      
+      // Case 3: If it's a date string (e.g. "2014-04-03" or "04/03/2014")
+      if (!dateObj && typeof val === 'string') {
+        const parsed = Date.parse(val);
+        if (!isNaN(parsed)) {
+          dateObj = new Date(parsed);
+        }
+      }
+
+      if (dateObj && !isNaN(dateObj.getTime())) {
+        const day = String(dateObj.getDate()).padStart(2, '0');
+        const year = dateObj.getFullYear();
+        const months = [
+          'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+          'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+        ];
+        const month = months[dateObj.getMonth()];
+        return `${day} ${month} ${year}`;
+      }
+      
+      return String(val);
+    },
+
+    uploadExcel(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = new Uint8Array(e.target.result);
+          // Set cellDates: true to let SheetJS parse date formats automatically
+          const workbook = XLSX.read(data, {type:'array', cellDates: true});
+          const sheet = workbook.Sheets[workbook.SheetNames[0]];
+          const json = XLSX.utils.sheet_to_json(sheet, {defval:''});
+          const requiredFields = ['nama','tempat','tanggal_lahir','nama_ortu','nis_nisn','no_peserta','tahun_pelajaran'];
+          const headers = Object.keys(json[0] || {});
+          const missing = requiredFields.filter(f => !headers.includes(f));
+          if (missing.length > 0) {
+            Swal.fire({icon:'error',title:'Kolom Tidak Lengkap',html:'Kolom yang hilang: <b>'+missing.join(', ')+'</b>',background:'#1e1b4b',color:'#e2e8f0'});
+            return;
+          }
+          this.students = json.map(row => {
+            const obj = {};
+            requiredFields.forEach(f => { 
+              if (f === 'tanggal_lahir') {
+                obj[f] = this.formatExcelDate(row[f]);
+              } else {
+                obj[f] = String(row[f] || ''); 
+              }
+            });
+            return obj;
+          });
+          this.saveState();
+          Swal.fire({icon:'success',title:'Data Dimuat!',text:this.students.length+' siswa berhasil diimpor.',background:'#1e1b4b',color:'#e2e8f0',confirmButtonColor:'#6366f1'});
+        } catch(err) {
+          Swal.fire({icon:'error',title:'Gagal Parsing',text:err.message,background:'#1e1b4b',color:'#e2e8f0'});
+        }
+      };
+      reader.readAsArrayBuffer(file);
+    },
+
+    async generateZip() {
+      if (!this.templateBase64 || !this.students.length) return;
+      
+      // Validation check: If photos are uploaded, make sure a photo placeholder is chosen inside the template
+      const hasUploadedPhotos = Object.keys(this.photos).length > 0;
+      if (hasUploadedPhotos && !this.selectedTemplateImage) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Pas Foto Belum Dipetakan!',
+          html: '<div class="text-left text-sm leading-relaxed space-y-2">' +
+                '<p>Kami mendeteksi Anda mengunggah <b>Foto Siswa</b>, tetapi belum memilih area gambar pas foto di template Word Anda.</p>' +
+                '<p class="mt-2 text-amber-300 font-bold">Langkah Cepat Memperbaiki:</p>' +
+                '<ol class="list-decimal pl-4 mt-1 space-y-1 text-xs">' +
+                  '<li>Buka file template Word Anda.</li>' +
+                  '<li>Hapus kotak tulisan/Text Box <span class="font-mono bg-indigo-950 px-1 rounded">{foto}</span> Anda.</li>' +
+                  '<li><b>Masukkan Gambar asli bebas apa saja</b> (sebagai placeholder pas foto) lalu atur letak & ukurannya.</li>' +
+                  '<li>Simpan file Word, lalu upload ulang di bagian <b>Template Word</b>.</li>' +
+                  '<li>Klik pada gambar contoh pas foto baru yang muncul di bawah tombol upload.</li>' +
+                '</ol>' +
+                '</div>',
+          background: '#1e1b4b',
+          color: '#e2e8f0',
+          confirmButtonColor: '#6366f1'
+        });
+        return;
+      }
+      
+      Swal.fire({title:'Generating SKL...',html:'Memproses <b>'+this.students.length+'</b> dokumen...',allowOutsideClick:false,didOpen:()=>{Swal.showLoading()},background:'#1e1b4b',color:'#e2e8f0'});
+      await new Promise(r => setTimeout(r, 300));
+      try {
+        const zip = new JSZip();
+        const binaryStr = atob(this.templateBase64);
+        const bytes = new Uint8Array(binaryStr.length);
+        for (let i = 0; i < binaryStr.length; i++) bytes[i] = binaryStr.charCodeAt(i);
+        for (let idx = 0; idx < this.students.length; idx++) {
+          const student = this.students[idx];
+          const pzip = new PizZip(bytes);
+          const doc = new window.docxtemplater(pzip, {paragraphLoop:true,linebreaks:true});
+          const photoVal = this.photos[student.nis_nisn];
+          const hasPhoto = !!photoVal;
+          let photoBase64 = hasPhoto ? (typeof photoVal === 'object' ? photoVal.base64 : photoVal) : null;
+          const photoExt = hasPhoto ? (typeof photoVal === 'object' ? (photoVal.ext || 'png') : 'png') : 'png';
+
+          if (hasPhoto && photoBase64) {
+            let targetRatio = 3 / 4; // Default to 3x4
+            const selectedImgObj = this.templateImages.find(img => img.path === this.selectedTemplateImage);
+            if (selectedImgObj && selectedImgObj.ratio) {
+              targetRatio = selectedImgObj.ratio;
+            }
+            // Automatically crop/fit to target ratio to prevent stretching/squishing!
+            photoBase64 = await this.cropImageToRatio(photoBase64, targetRatio);
+          }
+
+          const currentNum = this.startNumber + idx;
+          const noUrutStr = String(currentNum);
+          const noUrutPaddedStr = String(currentNum).padStart(2, '0');
+          const noUrutPadded3Str = String(currentNum).padStart(3, '0');
+
+          doc.setData({
+            nama: student.nama || '',
+            tempat: student.tempat || '',
+            tanggal_lahir: student.tanggal_lahir || '',
+            nama_ortu: student.nama_ortu || '',
+            nis_nisn: student.nis_nisn || '',
+            no_peserta: student.no_peserta || '',
+            tahun_pelajaran: student.tahun_pelajaran || '',
+            foto: hasPhoto ? "[FOTO_PLACEHOLDER]" : "Pas Foto 3x4",
+            
+            no_urut: noUrutStr,
+            no_urut_padded: noUrutPaddedStr,
+            no_urut_padded_3: noUrutPadded3Str,
+
+            // Uppercase versions to support user templates using uppercase tags (e.g., {NAMA})
+            NAMA: student.nama || '',
+            TEMPAT: student.tempat || '',
+            TANGGAL_LAHIR: student.tanggal_lahir || '',
+            NAMA_ORTU: student.nama_ortu || '',
+            NIS_NISN: student.nis_nisn || '',
+            NO_PESERTA: student.no_peserta || '',
+            TAHUN_PELAJARAN: student.tahun_pelajaran || '',
+            FOTO: hasPhoto ? "[FOTO_PLACEHOLDER]" : "Pas Foto 3x4",
+            
+            NO_URUT: noUrutStr,
+            NO_URUT_PADDED: noUrutPaddedStr,
+            NO_URUT_PADDED_3: noUrutPadded3Str,
+
+            // Capitalized / Title Case versions
+            Nama: student.nama || '',
+            Tempat: student.tempat || '',
+            Tanggal_Lahir: student.tanggal_lahir || '',
+            TanggalLahir: student.tanggal_lahir || '',
+            Nama_Ortu: student.nama_ortu || '',
+            NamaOrtu: student.nama_ortu || '',
+            Nis_Nisn: student.nis_nisn || '',
+            NisNisn: student.nis_nisn || '',
+            No_Peserta: student.no_peserta || '',
+            NoPeserta: student.no_peserta || '',
+            Tahun_Pelajaran: student.tahun_pelajaran || '',
+            TahunPelajaran: student.tahun_pelajaran || '',
+            Foto: hasPhoto ? "[FOTO_PLACEHOLDER]" : "Pas Foto 3x4",
+            
+            No_Urut: noUrutStr,
+            No_Urut_Padded: noUrutPaddedStr,
+            No_Urut_Padded_3: noUrutPadded3Str,
+            
+            NoUrut: noUrutStr,
+            NoUrutPadded: noUrutPaddedStr,
+            NoUrutPadded3: noUrutPadded3Str
+          });
+          doc.render();
+          let out = doc.getZip().generate({type:'uint8array',mimeType:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
+          
+          if (hasPhoto) {
+            const outZip = await JSZip.loadAsync(out);
+            let swapped = false;
+            
+            // Try Method 0: Explicitly Selected Image from UI (100% Bulletproof & Instant!)
+            if (this.selectedTemplateImage && outZip.file(this.selectedTemplateImage)) {
+              outZip.file(this.selectedTemplateImage, photoBase64, {base64: true});
+              swapped = true;
+            }
+            
+            if (!swapped) {
+              // Try Method 1: Dummy Image Swap via Alt Text / Title / Name (Preserves layout/borders!)
+              let docXml = await outZip.file("word/document.xml").async("string");
+              const drawings = docXml.match(/<w:drawing\b[\s\S]*?<\/w:drawing>/g) || [];
+              for (const drawing of drawings) {
+                if (/(?:descr|title|name)\s*=\s*["'][^"']*(?:foto|FOTO)[^"']*["']/i.test(drawing)) {
+                  const blipMatch = drawing.match(/<a:blip\b[^>]*?r:embed\s*=\s*["'](rId\d+)["']/i) || 
+                                    drawing.match(/<a:blip\b[^>]*?embed\s*=\s*["'](rId\d+)["']/i);
+                  if (blipMatch) {
+                    const targetRelId = blipMatch[1];
+                    let relsXml = await outZip.file("word/_rels/document.xml.rels").async("string");
+                    const relRegex = new RegExp(`Relationship\\b[^>]*?Id\\s*=\\s*["']${targetRelId}["'][^>]*?Target\\s*=\\s*["']([^"']+)["']`, 'i');
+                    const relMatch = relsXml.match(relRegex);
+                    if (relMatch) {
+                      let targetPath = relMatch[1];
+                      const imagePath = targetPath.startsWith("word/") ? targetPath : "word/" + targetPath;
+                      outZip.file(imagePath, photoBase64, {base64: true});
+                      swapped = true;
+                      break;
+                    }
+                  }
+                }
+              }
+            }
+
+            if (!swapped) {
+              // Method 2: Fallback XML Injection (replaces [FOTO_PLACEHOLDER])
+              // 1. Dynamic Extension handling inside ZIP media
+              const imagePath = `word/media/student_photo.${photoExt}`;
+              outZip.file(imagePath, photoBase64, {base64: true});
+              
+              // 2. Register png, jpg, jpeg extensions
+              let contentTypesXml = await outZip.file("[Content_Types].xml").async("string");
+              if (!contentTypesXml.includes('Extension="png"') && !contentTypesXml.includes('Extension="PNG"')) {
+                contentTypesXml = contentTypesXml.replace('</Types>', '<Default Extension="png" ContentType="image/png"/></Types>');
+              }
+              if (!contentTypesXml.includes('Extension="jpg"') && !contentTypesXml.includes('Extension="JPG"')) {
+                contentTypesXml = contentTypesXml.replace('</Types>', '<Default Extension="jpg" ContentType="image/jpeg"/></Types>');
+              }
+              if (!contentTypesXml.includes('Extension="jpeg"') && !contentTypesXml.includes('Extension="JPEG"')) {
+                contentTypesXml = contentTypesXml.replace('</Types>', '<Default Extension="jpeg" ContentType="image/jpeg"/></Types>');
+              }
+              outZip.file("[Content_Types].xml", contentTypesXml);
+
+              // 3. Generate sequential Relationship ID
+              let relsXml = await outZip.file("word/_rels/document.xml.rels").async("string");
+              const idMatches = relsXml.match(/Id\s*=\s*["']rId(\d+)["']/gi) || [];
+              let maxId = 0;
+              idMatches.forEach(m => {
+                const numMatch = m.match(/\d+/);
+                if (numMatch) {
+                  const num = parseInt(numMatch[0], 10);
+                  if (num > maxId) maxId = num;
+                }
+              });
+              const photoRelId = "rId" + (maxId + 1);
+
+              const photoRel = `<Relationship Id="${photoRelId}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/student_photo.${photoExt}"/>`;
+              relsXml = relsXml.replace(/<\/Relationships>/i, photoRel + '</Relationships>');
+              outZip.file("word/_rels/document.xml.rels", relsXml);
+              
+              // 4. Injected clean drawing XML with required wp:effectExtent and root-injected namespaces
+              let docXml = await outZip.file("word/document.xml").async("string");
+              
+              const rootTagMatch = docXml.match(/<w:document\b[^>]*>/);
+              if (rootTagMatch) {
+                let rootTag = rootTagMatch[0];
+                const endChar = rootTag.endsWith('/>') ? '/>' : '>';
+                const namespacesToAdd = [];
+                if (!rootTag.includes('xmlns:wp=')) namespacesToAdd.push('xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"');
+                if (!rootTag.includes('xmlns:a=')) namespacesToAdd.push('xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"');
+                if (!rootTag.includes('xmlns:pic=')) namespacesToAdd.push('xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"');
+                if (!rootTag.includes('xmlns:r=')) namespacesToAdd.push('xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"');
+                
+                if (namespacesToAdd.length > 0) {
+                  const replacement = ' ' + namespacesToAdd.join(' ') + endChar;
+                  rootTag = rootTag.replace(new RegExp(endChar + '$'), replacement);
+                  docXml = docXml.replace(rootTagMatch[0], rootTag);
+                }
+              }
+
+              const uniqueDocPrId = Math.floor(Math.random() * 1000000) + 1000;
+              const drawingXml = 
+                '<w:drawing xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing">' +
+                  '<wp:inline distT="0" distB="0" distL="0" distR="0">' +
+                    '<wp:extent cx="1080000" cy="1440000"/>' +
+                    '<wp:effectExtent l="0" t="0" r="0" b="0"/>' +
+                    `<wp:docPr id="${uniqueDocPrId}" name="Student Photo"/>` +
+                    '<wp:cNvGraphicFramePr/>' +
+                    '<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">' +
+                      '<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">' +
+                        '<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">' +
+                          '<pic:nvPicPr>' +
+                            `<pic:cNvPr id="0" name="student_photo.${photoExt}"/>` +
+                            '<pic:cNvPicPr/>' +
+                          '</pic:nvPicPr>' +
+                          '<pic:blipFill>' +
+                            `<a:blip xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:embed="${photoRelId}"/>` +
+                            '<a:stretch><a:fillRect/></a:stretch>' +
+                          '</pic:blipFill>' +
+                          '<pic:spPr>' +
+                            '<a:xfrm>' +
+                              '<a:off x="0" y="0"/>' +
+                              '<a:ext cx="1080000" cy="1440000"/>' +
+                            '</a:xfrm>' +
+                            '<a:prstGeom prst="rect"/>' +
+                          '</pic:spPr>' +
+                        '</pic:pic>' +
+                      '</a:graphicData>' +
+                    '</a:graphic>' +
+                  '</wp:inline>' +
+                '</w:drawing>';
+              
+              const runRegex = /<w:r\b[^>]*>(?:(?!<\/w:r>).)*?\[FOTO_PLACEHOLDER\].*?<\/w:r>/s;
+              const newRun = `<w:r>${drawingXml}</w:r>`;
+              docXml = docXml.replace(runRegex, newRun);
+              outZip.file("word/document.xml", docXml);
+            }
+
+            out = await outZip.generateAsync({type:'uint8array', mimeType:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
+          }
+          
+          const safeName = (student.nama || 'siswa').replace(/[^a-zA-Z0-9 ]/g,'').replace(/\s+/g,'_');
+          zip.file('SKL_'+safeName+'.docx', out);
+        }
+        const blob = await zip.generateAsync({type:'blob'});
+        saveAs(blob, 'SKL_Otomatis.zip');
+        Swal.fire({icon:'success',title:'Berhasil!',text:this.students.length+' file SKL telah di-download sebagai ZIP.',background:'#1e1b4b',color:'#e2e8f0',confirmButtonColor:'#6366f1'});
+      } catch(err) {
+        Swal.fire({icon:'error',title:'Gagal Generate',text:err.message,background:'#1e1b4b',color:'#e2e8f0'});
+      }
+    },
+
+    clearData() {
+      Swal.fire({
+        title:'Reset Semua Data?',text:'Template dan data siswa akan dihapus dari browser.',icon:'warning',
+        showCancelButton:true,confirmButtonText:'Ya, Reset!',cancelButtonText:'Batal',
+        confirmButtonColor:'#ef4444',cancelButtonColor:'#6366f1',background:'#1e1b4b',color:'#e2e8f0'
+      }).then(result => {
+        if (result.isConfirmed) {
+          localStorage.removeItem('skl_template_base64');
+          localStorage.removeItem('skl_template_name');
+          localStorage.removeItem('skl_students');
+          localStorage.removeItem('skl_photos');
+          Swal.fire({icon:'success',title:'Data Direset!',text:'Halaman akan dimuat ulang.',timer:1500,showConfirmButton:false,background:'#1e1b4b',color:'#e2e8f0'}).then(()=>{window.location.reload()});
+        }
+      });
+    }
+  }
+}
+</script>
+</body>
+</html>
