@@ -170,8 +170,8 @@
     </div>
     <div class="flex-1 min-w-0">
       <p class="text-[10px] text-violet-300/50 font-bold uppercase tracking-wider">Foto Siswa</p>
-      <p class="text-xl font-black text-violet-400 mt-0.5" x-text="Object.keys(photos).length"></p>
-      <p class="text-xs text-indigo-300/80 mt-0.5">Terpetakan Massal</p>
+      <p class="text-xl font-black text-violet-400 mt-0.5" x-text="matchedPhotosCount() + ' / ' + students.length"></p>
+      <p class="text-xs text-indigo-300/80 mt-0.5">Foto Terpasang (Cocok)</p>
     </div>
   </div>
 
@@ -409,10 +409,10 @@ Template Word (.docx)
             <td class="px-4 py-3 text-indigo-300" x-text="s.nama_ortu"></td>
             <td class="px-4 py-3 font-mono text-indigo-200" x-text="s.nis_nisn"></td>
             <td class="px-4 py-3">
-              <template x-if="photos[s.nis_nisn]">
+              <template x-if="hasPhoto(s)">
                 <span class="text-emerald-400 text-xs bg-emerald-500/20 px-2.5 py-1 rounded-full font-bold flex items-center gap-1 w-max border border-emerald-500/30">📸 MATCHED</span>
               </template>
-              <template x-if="!photos[s.nis_nisn]">
+              <template x-if="!hasPhoto(s)">
                 <span class="text-amber-400 text-xs bg-amber-500/10 px-2.5 py-1 rounded-full flex items-center gap-1 w-max border border-amber-500/20">&#9675; Belum Ada</span>
               </template>
             </td>
@@ -649,6 +649,40 @@ function sklApp() {
         img.onerror = () => resolve(base64Str);
         img.src = 'data:image/jpeg;base64,' + base64Str;
       });
+    },
+
+    getNisnOnly(val) {
+      if (!val) return '';
+      // Extract NISN: Split by slash '/' and get the first segment
+      const parts = String(val).split('/');
+      return parts[0].trim();
+    },
+
+    hasPhoto(student) {
+      if (!student) return false;
+      const rawNisNisn = String(student.nis_nisn || '').trim();
+      if (this.photos[rawNisNisn]) return true;
+      const nisnOnly = this.getNisnOnly(rawNisNisn);
+      if (nisnOnly && this.photos[nisnOnly]) return true;
+      return false;
+    },
+
+    getPhoto(student) {
+      if (!student) return null;
+      const rawNisNisn = String(student.nis_nisn || '').trim();
+      if (this.photos[rawNisNisn]) return this.photos[rawNisNisn];
+      const nisnOnly = this.getNisnOnly(rawNisNisn);
+      if (nisnOnly && this.photos[nisnOnly]) return this.photos[nisnOnly];
+      return null;
+    },
+
+    matchedPhotosCount() {
+      if (!this.students.length) return 0;
+      let count = 0;
+      this.students.forEach(s => {
+        if (this.hasPhoto(s)) count++;
+      });
+      return count;
     },
 
     filteredStudents() {
@@ -1186,7 +1220,7 @@ function sklApp() {
           const student = this.students[idx];
           const pzip = new PizZip(bytes);
           const doc = new window.docxtemplater(pzip, {paragraphLoop:true,linebreaks:true});
-          const photoVal = this.photos[student.nis_nisn];
+          const photoVal = this.getPhoto(student);
           const hasPhoto = !!photoVal;
           let photoBase64 = hasPhoto ? (typeof photoVal === 'object' ? photoVal.base64 : photoVal) : null;
           const photoExt = hasPhoto ? (typeof photoVal === 'object' ? (photoVal.ext || 'png') : 'png') : 'png';
